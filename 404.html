@@ -373,6 +373,23 @@
 <!-- City版安装代码已完成 -->
     
     
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        // id: "404", // 可选。默认为 location.href
+        owner: 'UMP40',
+        repo: 'https://github.com/UMP40/Comments-of-UMP40-s-Blog',
+        oauth: {
+            client_id: '743426f12b82ad3ef9e4',
+            client_secret: 'c8cf6cef07859cfab0a394a29174096525d56f12',
+        },
+    })
+    gitment.render('container')
+
+</script>
+
     <!-- partial('_partial/comment/changyan') -->
     <!--PC版-->
 
