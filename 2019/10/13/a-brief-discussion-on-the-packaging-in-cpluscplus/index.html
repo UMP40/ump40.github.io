@@ -413,7 +413,6 @@ height:50vh;
 </ol>
 <p>一般地，只要将需要封装的对象放入命名空间即可。如：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> myns</span><br><span class="line">&#123;<span class="comment">//大括号不能省略</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">transfer</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">    myns::transfer(n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="类封装"><a href="#类封装" class="headerlink" title="类封装"></a>类封装</h2><p>To be continued……</p>
 
     </article>
@@ -588,6 +587,8 @@ top:50vh;
     
     
     
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
         Total : 3
@@ -606,12 +607,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/acgfw/" >ACGFW</a>
+            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/a-brief-discussion-on-the-packaging-in-cpluscplus/" >浅谈C++中的封装</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/a-brief-discussion-on-the-packaging-in-cpluscplus/" >浅谈C++中的封装</a>
+            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/acgfw/" >ACGFW</a>
         </li>
     
     
@@ -624,13 +625,7 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="C++"><span class="iconfont-archer">&#xe606;</span>C++</span>
-    
-        <span class="sidebar-tag-name" data-tags="工程向"><span class="iconfont-archer">&#xe606;</span>工程向</span>
-    
         <span class="sidebar-tag-name" data-tags="ACGFW"><span class="iconfont-archer">&#xe606;</span>ACGFW</span>
-    
-        <span class="sidebar-tag-name" data-tags="test"><span class="iconfont-archer">&#xe606;</span>test</span>
     
         <span class="sidebar-tag-name" data-tags="文学"><span class="iconfont-archer">&#xe606;</span>文学</span>
     
@@ -638,7 +633,13 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="扯淡"><span class="iconfont-archer">&#xe606;</span>扯淡</span>
     
+        <span class="sidebar-tag-name" data-tags="test"><span class="iconfont-archer">&#xe606;</span>test</span>
+    
         <span class="sidebar-tag-name" data-tags="地理"><span class="iconfont-archer">&#xe606;</span>地理</span>
+    
+        <span class="sidebar-tag-name" data-tags="C++"><span class="iconfont-archer">&#xe606;</span>C++</span>
+    
+        <span class="sidebar-tag-name" data-tags="工程向"><span class="iconfont-archer">&#xe606;</span>工程向</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -708,7 +709,25 @@ jsonContent:
     
         <script src="/scripts/share.js" async></script>    
      
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!--
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
 
 

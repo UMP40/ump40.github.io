@@ -486,6 +486,8 @@
     
     
     
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
         Total : 3
@@ -504,12 +506,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/acgfw/" >ACGFW</a>
+            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/a-brief-discussion-on-the-packaging-in-cpluscplus/" >浅谈C++中的封装</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/a-brief-discussion-on-the-packaging-in-cpluscplus/" >浅谈C++中的封装</a>
+            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/acgfw/" >ACGFW</a>
         </li>
     
     
@@ -522,13 +524,7 @@
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="C++"><span class="iconfont-archer">&#xe606;</span>C++</span>
-    
-        <span class="sidebar-tag-name" data-tags="工程向"><span class="iconfont-archer">&#xe606;</span>工程向</span>
-    
         <span class="sidebar-tag-name" data-tags="ACGFW"><span class="iconfont-archer">&#xe606;</span>ACGFW</span>
-    
-        <span class="sidebar-tag-name" data-tags="test"><span class="iconfont-archer">&#xe606;</span>test</span>
     
         <span class="sidebar-tag-name" data-tags="文学"><span class="iconfont-archer">&#xe606;</span>文学</span>
     
@@ -536,7 +532,13 @@
     
         <span class="sidebar-tag-name" data-tags="扯淡"><span class="iconfont-archer">&#xe606;</span>扯淡</span>
     
+        <span class="sidebar-tag-name" data-tags="test"><span class="iconfont-archer">&#xe606;</span>test</span>
+    
         <span class="sidebar-tag-name" data-tags="地理"><span class="iconfont-archer">&#xe606;</span>地理</span>
+    
+        <span class="sidebar-tag-name" data-tags="C++"><span class="iconfont-archer">&#xe606;</span>C++</span>
+    
+        <span class="sidebar-tag-name" data-tags="工程向"><span class="iconfont-archer">&#xe606;</span>工程向</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -604,7 +606,25 @@ jsonContent:
     </div>
     <!-- async load share.js -->
      
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!--
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
 
 
